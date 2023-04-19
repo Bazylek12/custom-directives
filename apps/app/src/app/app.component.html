@@ -1,1 +1,11 @@
-<button ShowSnakbarOnClick="Booo">CLICK ME</button>
+<!-- SNACKBAR DIRECTIVE -->
+
+<button ShowSnackbarOnClick="Test">CLICK ME</button>
+<br>
+<!-- DIALOG DIRECTIVE -->
+<button
+  confirmDialog="Are you sure that you want to do this?"
+  (confirmed)="onConfirmed($event)"
+>
+  Confirm your choice
+</button>

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { AppComponent } from '../app.component';
 import { MaterialModule } from '../material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,7 +16,7 @@ import { ConfirmDialogDirectiveTestComponent } from './confirm-dialog-directive.
 import { UrlValidatorDirectiveTestComponent } from './url-vaidator-directive.test-component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TelValidatorDirectiveTestComponent } from './tel-validator-directive.test-component';
-import { ShowSnakbarOnClickDirectiveModule } from '../directives/show-snakbar-on-click.directive-module';
+import { ConfirmDialogDirectiveModule } from '../directives/confirm-dialog.directive-module';
 
 @NgModule({
   declarations: [
@@ -40,7 +39,7 @@ import { ShowSnakbarOnClickDirectiveModule } from '../directives/show-snakbar-on
     AppRoutingModule,
     MatSnackBarModule,
     ReactiveFormsModule,
-    ShowSnakbarOnClickDirectiveModule,
+    ConfirmDialogDirectiveModule,
   ],
   providers: [],
   bootstrap: [],

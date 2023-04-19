@@ -8,7 +8,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ShowSnakbarOnClickDirectiveModule } from './directives/show-snakbar-on-click.directive-module';
+import { ConfirmDialogDirectiveModule } from './directives/confirm-dialog.directive-module';
+import { ConfirmDialogComponentModule } from './components/confirm-dialog/confirm-dialog.component-module';
+import { ShowSnackbarOnClickDirectiveModule } from './directives/show-snackbar-on-click.directive-module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,7 +23,9 @@ import { ShowSnakbarOnClickDirectiveModule } from './directives/show-snakbar-on-
     AppRoutingModule,
     MatSnackBarModule,
     ReactiveFormsModule,
-    ShowSnakbarOnClickDirectiveModule,
+    ConfirmDialogDirectiveModule,
+    ConfirmDialogComponentModule,
+    ShowSnackbarOnClickDirectiveModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
