@@ -17,6 +17,8 @@ import { UrlValidatorDirectiveTestComponent } from './url-vaidator-directive.tes
 import { ReactiveFormsModule } from '@angular/forms';
 import { TelValidatorDirectiveTestComponent } from './tel-validator-directive.test-component';
 import { ConfirmDialogDirectiveModule } from '../directives/confirm-dialog.directive-module';
+import { ShowSnackbarOnClickDirectiveModule } from '../directives/show-snackbar-on-click.directive-module';
+import { BlockPasteDirectiveModule } from '../directives/block-paste.directive-module';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,8 @@ import { ConfirmDialogDirectiveModule } from '../directives/confirm-dialog.direc
     MatSnackBarModule,
     ReactiveFormsModule,
     ConfirmDialogDirectiveModule,
+    ShowSnackbarOnClickDirectiveModule,
+    BlockPasteDirectiveModule,
   ],
   providers: [],
   bootstrap: [],

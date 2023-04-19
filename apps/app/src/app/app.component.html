@@ -1,11 +1,17 @@
 <!-- SNACKBAR DIRECTIVE -->
-
-<button ShowSnackbarOnClick="Test">CLICK ME</button>
+<h2>Snackbar Directive</h2>
+<button ShowSnackbarOnClick="Test">Show snackbar</button>
 <br>
 <!-- DIALOG DIRECTIVE -->
+<br>
+<h2>Dialog Directive</h2>
 <button
   confirmDialog="Are you sure that you want to do this?"
   (confirmed)="onConfirmed($event)"
 >
-  Confirm your choice
+  Confirm
 </button>
+<br>
+<h2>Block paste Directive</h2>
+<input blockPaste />
+<textarea blockPaste></textarea>

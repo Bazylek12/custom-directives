@@ -11,6 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ConfirmDialogDirectiveModule } from './directives/confirm-dialog.directive-module';
 import { ConfirmDialogComponentModule } from './components/confirm-dialog/confirm-dialog.component-module';
 import { ShowSnackbarOnClickDirectiveModule } from './directives/show-snackbar-on-click.directive-module';
+import { BlockPasteDirectiveModule } from './directives/block-paste.directive-module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,6 +27,7 @@ import { ShowSnackbarOnClickDirectiveModule } from './directives/show-snackbar-o
     ConfirmDialogDirectiveModule,
     ConfirmDialogComponentModule,
     ShowSnackbarOnClickDirectiveModule,
+    BlockPasteDirectiveModule
   ],
   providers: [],
   bootstrap: [AppComponent],
