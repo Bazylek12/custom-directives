@@ -1,9 +1,10 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
+
 @Component({
   template: `<button
     data-test-id="directive-button"
-    [showSnackbarOnClick]="data"
+    [ShowSnackbarOnClick]="data"
   >
     Show Snackbar
   </button>`,
