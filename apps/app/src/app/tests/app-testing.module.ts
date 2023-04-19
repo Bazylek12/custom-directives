@@ -19,6 +19,7 @@ import { TelValidatorDirectiveTestComponent } from './tel-validator-directive.te
 import { ConfirmDialogDirectiveModule } from '../directives/confirm-dialog.directive-module';
 import { ShowSnackbarOnClickDirectiveModule } from '../directives/show-snackbar-on-click.directive-module';
 import { BlockPasteDirectiveModule } from '../directives/block-paste.directive-module';
+import { BackgroundCarouselDirectiveModule } from '../directives/background-carousel.directive-module';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { BlockPasteDirectiveModule } from '../directives/block-paste.directive-m
     ConfirmDialogDirectiveModule,
     ShowSnackbarOnClickDirectiveModule,
     BlockPasteDirectiveModule,
+    BackgroundCarouselDirectiveModule,
   ],
   providers: [],
   bootstrap: [],

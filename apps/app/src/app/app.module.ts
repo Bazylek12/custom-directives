@@ -12,6 +12,7 @@ import { ConfirmDialogDirectiveModule } from './directives/confirm-dialog.direct
 import { ConfirmDialogComponentModule } from './components/confirm-dialog/confirm-dialog.component-module';
 import { ShowSnackbarOnClickDirectiveModule } from './directives/show-snackbar-on-click.directive-module';
 import { BlockPasteDirectiveModule } from './directives/block-paste.directive-module';
+import { BackgroundCarouselDirectiveModule } from './directives/background-carousel.directive-module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,7 +28,8 @@ import { BlockPasteDirectiveModule } from './directives/block-paste.directive-mo
     ConfirmDialogDirectiveModule,
     ConfirmDialogComponentModule,
     ShowSnackbarOnClickDirectiveModule,
-    BlockPasteDirectiveModule
+    BlockPasteDirectiveModule,
+    BackgroundCarouselDirectiveModule
   ],
   providers: [],
   bootstrap: [AppComponent],
