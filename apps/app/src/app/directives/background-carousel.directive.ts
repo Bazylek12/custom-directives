@@ -1,7 +1,7 @@
-import { Directive, ElementRef, HostListener, Input, Output, Renderer2 } from '@angular/core';
+import { Directive, ElementRef, HostListener, Input, OnChanges, OnInit, Output, Renderer2 } from '@angular/core';
 
 @Directive({ selector: '[bgCarousel]' })
-export class BackgroundCarouselDirective {
+export class BackgroundCarouselDirective implements OnChanges {
   constructor(private _elementRef: ElementRef, private _renderer2: Renderer2) {
   }
   @Output() currentIndex = 0;
@@ -28,4 +28,8 @@ export class BackgroundCarouselDirective {
     this._renderer2.setStyle(this._elementRef.nativeElement, 'width', `${this.bgCarouselWidth}px`)
     this._renderer2.setStyle(this._elementRef.nativeElement, 'height', `${this.bgCarouselHeight}px`)
   }
+
+    ngOnChanges(): void {
+      this._renderer2.setStyle(this._elementRef.nativeElement, 'background-color', this.bgCarousel[this.currentIndex]);
+    }
 }

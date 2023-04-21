@@ -12,7 +12,7 @@ import { ConfirmDialogComponent } from '../components/confirm-dialog/confirm-dia
 export class ConfirmDialogDirective {
   constructor(private _matDialog: MatDialog) {}
 
-  @Input() confirmDialog = '';
+  @Input() confirmDialog?: string;
   @Output() confirmed: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   @HostListener('click')
