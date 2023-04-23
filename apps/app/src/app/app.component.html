@@ -1,9 +1,9 @@
-<!-- SNACKBAR DIRECTIVE -->
+SNACKBAR DIRECTIVE
 <h2>Snackbar Directive</h2>
 <button ShowSnackbarOnClick="Test">Show snackbar</button>
-<br>
+<br />
 <!-- DIALOG DIRECTIVE -->
-<br>
+<br />
 <h2>Dialog Directive</h2>
 <button
   confirmDialog="Are you sure that you want to do this?"
@@ -11,10 +11,15 @@
 >
   Confirm
 </button>
-<br>
+<br />
 <h2>Block paste Directive</h2>
 <input blockPaste />
 <textarea blockPaste></textarea>
-<br>
+<br />
 <h2>Background Carousel Directive</h2>
-<div [bgCarousel]="['rgb(0, 255, 255)', 'rgb(255, 0, 255)']" bgCarouselWidth='100' bgCarouselHeight='100'></div>
+<div
+  [bgCarousel]="['rgb(0, 255, 255)', 'rgb(255, 0, 255)']"
+  bgCarouselWidth="100"
+  bgCarouselHeight="100"
+  movable
+></div>
