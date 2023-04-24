@@ -45,8 +45,8 @@ SNACKBAR DIRECTIVE
         formControlName="url"
         required
       />
-      <mat-error *ngIf="urlForm.get('url')?.hasError('mustStartWithHttpOrHttps')">URL must start with http:// or https://</mat-error>
-      <mat-error *ngIf="urlForm.get('url')?.hasError('mustEndWithDotDomain')">URL must end with .domain</mat-error>
+      <mat-error *ngIf="urlForm.touched && urlForm.get('url')?.hasError('mustStartWithHttpOrHttps')">URL must start with http:// or https://</mat-error>
+      <mat-error *ngIf="urlForm.touched && urlForm.get('url')?.hasError('mustEndWithDotDomain')">URL must end with .domain</mat-error>
     </mat-form-field>
   </div>
 </form>

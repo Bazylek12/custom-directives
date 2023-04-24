@@ -31,6 +31,6 @@ export class UrlValidatorDirective implements Validator {
     if (!/\.[a-z]{2,}$/.test(value)) {
       return { mustEndWithDotDomain: true };
     }
-    return null;
+    return null ;
   }
 }
