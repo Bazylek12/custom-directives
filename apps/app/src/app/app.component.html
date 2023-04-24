@@ -43,10 +43,26 @@ SNACKBAR DIRECTIVE
         type="url"
         placeholder="Url"
         formControlName="url"
-        required
       />
       <mat-error *ngIf="urlForm.touched && urlForm.get('url')?.hasError('mustStartWithHttpOrHttps')">URL must start with http:// or https://</mat-error>
       <mat-error *ngIf="urlForm.touched && urlForm.get('url')?.hasError('mustEndWithDotDomain')">URL must end with .domain</mat-error>
+    </mat-form-field>
+  </div>
+</form>
+<br />
+<h2>Tel Validator directive</h2>
+<form [formGroup]="telForm">
+  <div>
+    <mat-form-field appearance="fill"
+      ><mat-label>Tel</mat-label>
+      <input
+        matInput
+        type="tel"
+        placeholder="Tel"
+        formControlName="tel"
+        [pattern]="'^[0-9]{3}-[0-9]{3}-[0-9]{3}$'"
+      />
+      <mat-error *ngIf="telForm.get('tel')?.hasError('invalidPattern')">Invalid number</mat-error>
     </mat-form-field>
   </div>
 </form>

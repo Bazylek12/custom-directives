@@ -21,6 +21,7 @@ import { FeatureFlagDirectiveModule } from './directives/feature-flag.directive-
 import { BrowserModule } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { UrlValidatorDirectiveModule } from './directives/url-validator.directive-module';
+import { TelValidatorDirectiveModule } from './directives/tel-validator.directive-module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -42,6 +43,7 @@ import { UrlValidatorDirectiveModule } from './directives/url-validator.directiv
     DeleteProductDirectiveModule,
     FeatureFlagDirectiveModule,
     UrlValidatorDirectiveModule,
+    TelValidatorDirectiveModule,
     MatFormFieldModule,
     MatInputModule,
     CommonModule,

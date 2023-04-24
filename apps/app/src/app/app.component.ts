@@ -11,6 +11,10 @@ export class AppComponent {
     url: new FormControl()
   });
 
+  readonly telForm: FormGroup = new FormGroup({
+    tel: new FormControl()
+  });
+
   onConfirmed(event: boolean): void {
     console.log(event);
   }
