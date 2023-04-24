@@ -23,6 +23,7 @@ import { BackgroundCarouselDirectiveModule } from '../directives/background-caro
 import { ConfirmDialogComponentModule } from '../components/confirm-dialog/confirm-dialog.component-module';
 import { MovableDirectiveModule } from '../directives/movable.directive-module';
 import { DeleteProductDirectiveModule } from '../directives/delete-product.directive-module';
+import { FeatureFlagDirectiveModule } from '../directives/feature-flag.directive-module';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { DeleteProductDirectiveModule } from '../directives/delete-product.direc
     ConfirmDialogComponentModule,
     MovableDirectiveModule,
     DeleteProductDirectiveModule,
+    FeatureFlagDirectiveModule,
   ],
   providers: [],
   bootstrap: [],
