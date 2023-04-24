@@ -1,24 +1,34 @@
 {
   "entityRelations": {
+    "component": {
+      "model": ["PROPERTY"],
+      "service": ["CONSTRUCTOR"],
+      "router": ["CONSTRUCTOR"],
+      "activatedRoute": ["CONSTRUCTOR"]
+    },
+    "service": {
+      "httpClient": ["CONSTRUCTOR"],
+      "model": ["PARAMETER", "RETURN"]
+    },
     "directive": {
       "model": ["PROPERTY"],
       "service": ["CONSTRUCTOR"],
       "elementRef": ["CONSTRUCTOR"],
       "renderer2": ["CONSTRUCTOR"]
-    },
-    "service": {
-      "httpClient": ["CONSTRUCTOR"],
-      "model": ["PROPERTY", "PARAMETER", "RETURN"]
     }
   },
   "external": {
-    "elementRef": {
-      "type": "ElementRef",
-      "module": "@angular/core"
+    "httpClient": {
+      "type": "HttpClient",
+      "module": "@angular/common/http"
     },
-    "renderer2": {
-      "type": "Renderer2",
-      "module": "@angular/core"
+    "router": {
+      "type": "Router",
+      "module": "@angular/router"
+    },
+    "activatedRoute": {
+      "type": "ActivatedRoute",
+      "module": "@angular/router"
     }
   },
   "entities": {
@@ -32,11 +42,14 @@
         "changeDetectionStrategy": "OnPush"
       }
     },
-    "directive": {
-      "type": "ANGULAR_DIRECTIVE"
+    "model": {
+      "type": "DATA_STRUCTURE"
     },
     "service": {
       "type": "ANGULAR_SERVICE"
+    },
+    "directive": {
+      "type": "ANGULAR_DIRECTIVE"
     }
   }
 }
