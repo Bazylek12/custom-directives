@@ -1,4 +1,4 @@
-import { Directive, ElementRef, HostListener, Input, OnChanges, OnInit, Output, Renderer2 } from '@angular/core';
+import { Directive, ElementRef, HostListener, Input, OnChanges, Output, Renderer2 } from '@angular/core';
 
 @Directive({ selector: '[bgCarousel]' })
 export class BackgroundCarouselDirective implements OnChanges {
