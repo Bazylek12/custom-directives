@@ -5,6 +5,10 @@
       "service": ["CONSTRUCTOR"],
       "elementRef": ["CONSTRUCTOR"],
       "renderer2": ["CONSTRUCTOR"]
+    },
+    "service": {
+      "httpClient": ["CONSTRUCTOR"],
+      "model": ["PROPERTY", "PARAMETER", "RETURN"]
     }
   },
   "external": {
