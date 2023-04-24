@@ -24,6 +24,7 @@ import { ConfirmDialogComponentModule } from '../components/confirm-dialog/confi
 import { MovableDirectiveModule } from '../directives/movable.directive-module';
 import { DeleteProductDirectiveModule } from '../directives/delete-product.directive-module';
 import { FeatureFlagDirectiveModule } from '../directives/feature-flag.directive-module';
+import { UrlValidatorDirectiveModule } from '../directives/url-validator.directive-module';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { FeatureFlagDirectiveModule } from '../directives/feature-flag.directive
     MovableDirectiveModule,
     DeleteProductDirectiveModule,
     FeatureFlagDirectiveModule,
+    UrlValidatorDirectiveModule,
   ],
   providers: [],
   bootstrap: [],
